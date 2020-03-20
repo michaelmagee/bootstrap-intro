@@ -14,7 +14,8 @@
 <body>
   <!--Nav-->
   <nav class="navbar navbar-light navbar-expand-sm bg-light">
-    <a href="/" class="navbar-brand">Whiskey Drop</a>
+    <a href="/" class="navbar-brand">
+      Whiskey Drop</a>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +65,7 @@
             <s class="d-none d-sm-inline">€19.99</s>
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>First one is free!</mark></strong></p>
-          <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+          <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign Up!</button></p>
           <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small>
           </p>
         </section>
@@ -84,7 +85,7 @@
         <div class="col-12 col-md-6">
           <div class="media">
             <div class="d-none d-sm-block">
-              <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100 alt="girl image">
+              <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
             </div>
             <div class="media-body">
               <blockquote class="blockquote">
@@ -97,12 +98,12 @@
         <div class="col-12 col-md-6">
           <div class="media">
             <div class="d-none d-sm-block">
-              <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100 alt="guy image">
+              <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
             </div>
             <div class="media-body">
               <blockquote class="blockquote">
                 <p>I haven't been sober for months!</p>
-                <footer class="blockquote-footer">John Doe on <cite title="Twitter">Twitter</cite></footer>
+                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
               </blockquote>
             </div>
           </div>
@@ -152,6 +153,38 @@
     </section>
     <!-- /.features -->
   </article>
+
+  <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="repeatPassword">Repeat Password</label>
+              <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

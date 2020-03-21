@@ -126,6 +126,11 @@ body {
     border-radius: 23px;
     width: 160px;
 }
+.btn--cta--lg {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 200px;
+}
 
 .btn--red {
     color: white;
